@@ -1,0 +1,232 @@
+:root{
+    --color-texto: #ffffff;
+    --background-div: rgba(0, 0, 0, 0.8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #000;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerH1{
+    font-size: 80px;
+    color: var(--color-texto);
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.headerLi{
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.headerLi:hover{
+    text-decoration: underline;
+}
+
+
+/* .headerA{
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.headerA:hover{
+    text-decoration: underline;
+} */
+
+
+main{
+    background-image: url(./img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------Home----------------------------------------------------------------------*/
+
+.mainContainerHome{
+    background-color: var(--background-div);
+    width: 700px;
+    height: 600px;
+}
+
+.containerInfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.firstParagraph, .secondParagraph, .orderParagraph{
+    color: var(--color-texto);
+    font-size: 25px;
+}
+
+.imageHome{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/*----------------------------------------------------------------------------Menu---------------------------------------------------------*/
+.mainContainerMenu{
+    background-color: var(--background-div);
+    width: 700px;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardMenu{
+    background-color: rgba(8, 0, 0, 0.5);
+    width: 290px;
+    height: 310px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardMenu:hover{
+    background-color: rgba(107, 96, 96, 0.5);
+}
+
+.menuImg{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.menuTitle{
+    color: var(--color-texto);
+    font-size: 25px;
+}
+
+.menuDescription{
+    color: var(--color-texto);
+    width: 80%;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------Contact-----------------------------------------------------------------*/
+
+.mainContainerContact{
+    background-color: var(--background-div);
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContact{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerPhone, .containerAddress{
+    display: flex;
+    gap: 10px;
+}
+
+.phoneNumber, .addressText{
+    color: var(--color-texto);
+    font-size: 20px;
+}
+
+.iframeMap{
+    height: 40vh;
+}
+
+/*-----------------------------------------------footer-------------------------------------*/
+
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    color: var(--color-texto);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*---------------------------------------------------media-----------------------------------------*/
+
+@media screen and (max-width:800px) {
+    .mainContainerHome{
+        width: 80vw;
+        height: 500px;
+    }
+
+    .mainContainerContact{
+        width: 80vw;
+        height: 600px;
+    }
+
+    .mainContainerMenu{
+        width: 90vw;
+    }
+
+    .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cardMenu{
+        width: 80vw;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+
+    .firstParagraph, .secondParagraph, .orderParagraph{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .imageHome{
+        width: 85%;
+    }
+}
