@@ -40,19 +40,6 @@ ul{
     text-decoration: underline;
 }
 
-
-/* .headerA{
-    color: var(--color-texto);
-    text-decoration: none;
-    font-size: 30px;
-    
-}
-
-.headerA:hover{
-    text-decoration: underline;
-} */
-
-
 main{
     background-image: url(./img/fondo.jpg);
     background-size: cover;
