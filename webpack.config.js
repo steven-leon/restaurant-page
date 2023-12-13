@@ -16,6 +16,6 @@
    output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/restaurant-page/' // Aquí cambias el valor
+    publicPath: 'https://steven-leon.github.io/restaurant-page/' // Aquí cambias el valor
     },
  };
